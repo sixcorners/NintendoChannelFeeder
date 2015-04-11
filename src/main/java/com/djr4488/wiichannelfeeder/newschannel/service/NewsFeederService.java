@@ -1,9 +1,7 @@
 package com.djr4488.wiichannelfeeder.newschannel.service;
 
 import org.slf4j.Logger;
-import javax.ejb.Schedule;
-import javax.ejb.Singleton;
-import javax.ejb.Startup;
+import javax.ejb.*;
 import javax.inject.Inject;
 import java.io.File;
 
@@ -22,6 +20,7 @@ public class NewsFeederService {
 	 * Right now, just log.
 	 */
 	@Schedule(second="0", minute="0", hour="3")
+	@Lock(LockType.WRITE)
 	public void getUpdatededNews() {
 		log.info("getUpdatedNews() started");
 		log.info("getUpdatedNews() completed");
@@ -31,6 +30,7 @@ public class NewsFeederService {
 	 * Don't really care about the region the caller is from at this point, but might in the future.  Right now
 	 * lets just send a news file.  My guess is RSA signatures are done on a region by region basis.
 	 */
+	@Lock(LockType.READ)
 	public File getNewsFile(String file) {
 		//for now just return existing files
 		log.debug("getNewsFile() file:{}", file);
