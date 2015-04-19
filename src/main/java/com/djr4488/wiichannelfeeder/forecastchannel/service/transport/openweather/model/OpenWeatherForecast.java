@@ -1,5 +1,6 @@
-package com.djr4488.wiichannelfeeder.forecastchannel.service.transport.model.openweather;
+package com.djr4488.wiichannelfeeder.forecastchannel.service.transport.openweather.model;
 
+import com.djr4488.wiichannelfeeder.forecastchannel.service.transport.Forecast;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
@@ -23,4 +24,10 @@ public class OpenWeatherForecast implements Serializable {
 	public Integer offset;
 	@XmlElement(name = "currently")
 	public OpenWeatherCurrentConditions openWeatherCurrent;
+
+	public Forecast getForecast() {
+		Forecast forecast = new Forecast();
+
+		return forecast;
+	}
 }

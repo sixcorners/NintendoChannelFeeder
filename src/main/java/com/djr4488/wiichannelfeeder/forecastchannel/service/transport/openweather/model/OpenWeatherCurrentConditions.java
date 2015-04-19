@@ -1,4 +1,4 @@
-package com.djr4488.wiichannelfeeder.forecastchannel.service.transport.model.openweather;
+package com.djr4488.wiichannelfeeder.forecastchannel.service.transport.openweather.model;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;

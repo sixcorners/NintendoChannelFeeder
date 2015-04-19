@@ -1,8 +1,9 @@
-package com.djr4488.wiichannelfeeder.forecastchannel.service.transport;
+package com.djr4488.wiichannelfeeder.forecastchannel.service.transport.openweather;
 
-import com.djr4488.wiichannelfeeder.forecastchannel.service.transport.model.Forecast;
-import com.djr4488.wiichannelfeeder.forecastchannel.service.transport.model.openweather.OpenWeatherCurrentConditions;
-import com.djr4488.wiichannelfeeder.forecastchannel.service.transport.model.openweather.OpenWeatherForecast;
+import com.djr4488.wiichannelfeeder.forecastchannel.service.transport.ForecastTransport;
+import com.djr4488.wiichannelfeeder.forecastchannel.service.transport.Forecast;
+import com.djr4488.wiichannelfeeder.forecastchannel.service.transport.openweather.model.OpenWeatherCurrentConditions;
+import com.djr4488.wiichannelfeeder.forecastchannel.service.transport.openweather.model.OpenWeatherForecast;
 import com.sun.jersey.api.client.Client;
 import com.sun.jersey.api.client.ClientResponse;
 import com.sun.jersey.api.client.WebResource;
@@ -34,8 +35,9 @@ public class OpenWeatherForecastTransport implements ForecastTransport {
 
 	public Forecast getForecastAndCurrent() {
 		log.debug("getForecastAndCurrent() started");
-
-		return null;
+		OpenWeatherForecast openWeatherForecast = getForecast();
+		openWeatherForecast.openWeatherCurrent = getCurrentConditions();
+		return openWeatherForecast.getForecast();
 	}
 
 	private OpenWeatherCurrentConditions getCurrentConditions() {
