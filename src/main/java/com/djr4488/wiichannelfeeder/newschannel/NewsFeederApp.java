@@ -1,6 +1,6 @@
 package com.djr4488.wiichannelfeeder.newschannel;
 
-import com.djr4488.wiichannelfeeder.newschannel.controller.NewsFeederApi;
+import com.djr4488.wiichannelfeeder.newschannel.restapi.NewsFeederApi;
 import com.djr4488.wiichannelfeeder.newschannel.exceptionmapper.NewsFeederExceptionMapper;
 import javax.enterprise.context.ApplicationScoped;
 import javax.ws.rs.ApplicationPath;

@@ -1,6 +1,6 @@
 package com.djr4488.wiichannelfeeder.forecastchannel;
 
-import com.djr4488.wiichannelfeeder.forecastchannel.controller.ForecastFeederApi;
+import com.djr4488.wiichannelfeeder.forecastchannel.restapi.ForecastFeederApi;
 import com.djr4488.wiichannelfeeder.forecastchannel.exceptionmapper.ForecastFeederExceptionMapper;
 import javax.enterprise.context.ApplicationScoped;
 import javax.ws.rs.ApplicationPath;

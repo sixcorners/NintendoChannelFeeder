@@ -1,4 +1,4 @@
-package com.djr4488.wiichannelfeeder.newschannel.controller;
+package com.djr4488.wiichannelfeeder.newschannel.restapi;
 
 import com.djr4488.wiichannelfeeder.newschannel.service.NewsFeederService;
 import org.joda.time.DateTime;
