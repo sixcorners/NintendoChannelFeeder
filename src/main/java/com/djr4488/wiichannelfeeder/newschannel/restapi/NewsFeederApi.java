@@ -1,8 +1,6 @@
 package com.djr4488.wiichannelfeeder.newschannel.restapi;
 
-import com.djr4488.wiichannelfeeder.newschannel.service.NewsFeederService;
-import org.joda.time.DateTime;
-import org.joda.time.DateTimeConstants;
+import com.djr4488.wiichannelfeeder.newschannel.restapi.service.NewsFeederService;
 import org.slf4j.Logger;
 import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;

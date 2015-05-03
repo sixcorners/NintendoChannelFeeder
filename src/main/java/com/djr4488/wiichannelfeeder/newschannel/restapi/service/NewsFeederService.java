@@ -1,7 +1,6 @@
-package com.djr4488.wiichannelfeeder.newschannel.service;
+package com.djr4488.wiichannelfeeder.newschannel.restapi.service;
 
 import org.slf4j.Logger;
-import javax.ejb.*;
 import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;
 import java.io.File;

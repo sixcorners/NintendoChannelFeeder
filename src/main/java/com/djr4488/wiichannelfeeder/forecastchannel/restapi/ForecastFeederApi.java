@@ -1,6 +1,6 @@
 package com.djr4488.wiichannelfeeder.forecastchannel.restapi;
 
-import com.djr4488.wiichannelfeeder.forecastchannel.controller.ForecastFeederController;
+import com.djr4488.wiichannelfeeder.forecastchannel.restapi.controller.ForecastFeederController;
 import org.slf4j.Logger;
 import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;
