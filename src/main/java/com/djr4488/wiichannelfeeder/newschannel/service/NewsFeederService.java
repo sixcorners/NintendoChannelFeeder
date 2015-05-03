@@ -7,8 +7,7 @@ import javax.inject.Inject;
 import java.io.File;
 
 /**
- * Service which will be used to schedule when to check for updated news and create the static files
- * to be served by the NewsFeederApi
+ * Used to sign and return the requested file to the controller
  */
 @ApplicationScoped
 public class NewsFeederService {
