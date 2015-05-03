@@ -1,6 +1,6 @@
 package com.djr4488.wiichannelfeeder.forecastchannel.restapi.controller;
 
-import com.djr4488.wiichannelfeeder.forecastchannel.restapi.service.ForecastService;
+import com.djr4488.wiichannelfeeder.forecastchannel.restapi.service.ForecastServiceBean;
 import org.slf4j.Logger;
 import javax.ejb.*;
 import javax.enterprise.context.ApplicationScoped;
@@ -17,7 +17,7 @@ public class ForecastFeederController {
 	@Inject
 	private Logger log;
 	@Inject
-	private ForecastService forecastService;
+	private ForecastServiceBean forecastService;
 
 	@Lock(LockType.READ)
 	public File getForecastFile(String region, String file) {

@@ -11,13 +11,11 @@ import java.io.File;
  *
  */
 @ApplicationScoped
-public class ForecastServiceBean implements ForecastService {
-	@Override
+public class ForecastServiceBean {
 	public File getShortBin(String region) {
 		return new File("c:/app/wiichannels/forecast/short.bin");
 	}
 
-	@Override
 	public File getForecastBin(String region) {
 		return new File("c:/app/wiichannels/forecast/forecast.bin");
 	}
